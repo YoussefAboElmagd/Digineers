@@ -1,0 +1,387 @@
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses | Digineers</title>
+    <link href="styles/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/courses.css">
+</head>
+<body>
+    
+
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-4 w-100">
+        <div class="container">
+          <a style="width: 20%;" href="index.html"><img width="100%" src="images/digineers-logo.PNG" alt="Digineers Academy"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">الصفحة الرئيسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">عن الاكاديمية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">الدورات التدريبية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">المتابعة والحضور</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">تواصل معنا</a>
+              </li>
+            </ul>
+            <div class="d-flex">
+                <a href="booking.html"><button id="bookingButtonNav" class="btn btn-outline-success">احجز الان</button></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="mainSection position-relative" style="text-align: center;">
+        <div class="mainText position-absolute top-50 text-center w-100 translate-middle-y ">
+          <h2 class="fw-bolder fs-1"> <span class="text-white">دوراتنا </span>التدريبية</h2>
+        </div>
+        <img class="px-lg-4 px-md-0" src="images/headerimg2.webp" alt="" >
+      </div>
+
+
+       <div class="courses">
+
+
+
+
+
+
+                    <div class="ageTabs py-5">
+                        <div class="container">
+                            <div class="row">
+                            <div class="col-md-2 offset-md-4">
+                                    <button onclick="selectAgeCourses(this,1)" class="tab selectedTab">من 8 ل 12 سنة</button>
+                            </div>
+                            <div class="col-md-2">
+                                    <button onclick="selectAgeCourses(this,2)" class="tab">من 13 ل 17 سنة</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                <div class="courseGenre my-5">
+                    <div class="genreHeader mb-5">
+                        <h3>الروبوتكس والذكاء الاصطناعي</h3>
+                        <span></span>
+                    </div>
+                    <div class="items">
+                        <div class="container">
+                            <div class="row justify-content-center" id="coursesContainer1">
+                                <div class="col-md-4">
+                                    <div class="item rounded-4" style="background: #ededed;">
+                                        <img class="w-100 rounded-top-4" height="250px" src="images/youngCourseImg.jpg" alt="">
+                                        <div class="itemInfo p-3">
+                                            <div class="title d-flex justify-content-between align-items-center mb-3">
+                                                <h3>COMPUTERS FROM HI TO AI</h3>
+                                                <div class="counter d-flex align-items-center gap-2">
+                                                    <img src="images/manCourse.svg" alt="">
+                                                    <span >250</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-2">12 محاضرات - من 8 الي 12 سنوات</h4>
+                                            <p>عن طريق الانترنت - يوديمي - في مكان الدورة</p>
+                                            <div class="price mb-3">
+                                                <span id="priceNow">1,500 ج.م</span>
+                                                <span id="priceBefore">2,000 ج.م</span>
+                                            </div>
+                                            <button>انضم الأن</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="item rounded-4" style="background: #ededed;">
+                                        <img class="w-100 rounded-top-4" height="250px" src="images/youngCourseImg.jpg" alt="">
+                                        <div class="itemInfo p-3">
+                                            <div class="title d-flex justify-content-between align-items-center mb-3">
+                                                <h3>COMPUTERS FROM HI TO AI</h3>
+                                                <div class="counter d-flex align-items-center gap-2">
+                                                    <img src="images/manCourse.svg" alt="">
+                                                    <span >250</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-2">12 محاضرات - من 8 الي 12 سنوات</h4>
+                                            <p>عن طريق الانترنت - يوديمي - في مكان الدورة</p>
+                                            <div class="price mb-3">
+                                                <span id="priceNow">1,500 ج.م</span>
+                                                <span id="priceBefore">2,000 ج.م</span>
+                                            </div>
+                                            <button>انضم الأن</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="item rounded-4" style="background: #ededed;">
+                                        <img class="w-100 rounded-top-4" height="250px" src="images/youngCourseImg.jpg" alt="">
+                                        <div class="itemInfo p-3">
+                                            <div class="title d-flex justify-content-between align-items-center mb-3">
+                                                <h3>COMPUTERS FROM HI TO AI</h3>
+                                                <div class="counter d-flex align-items-center gap-2">
+                                                    <img src="images/manCourse.svg" alt="">
+                                                    <span >250</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-2">12 محاضرات - من 8 الي 12 سنوات</h4>
+                                            <p>عن طريق الانترنت - يوديمي - في مكان الدورة</p>
+                                            <div class="price mb-3">
+                                                <span id="priceNow">1,500 ج.م</span>
+                                                <span id="priceBefore">2,000 ج.م</span>
+                                            </div>
+                                            <button>انضم الأن</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="courseGenre my-5">
+                    <div class="genreHeader mb-5">
+                        <h3>البرمجة</h3>
+                        <span></span>
+                    </div>
+                    <div class="items">
+                        <div class="container">
+                            <div class="row justify-content-center" id="coursesContainer2">
+                                <div class="col-md-4">
+                                    <div class="item rounded-4" style="background: #ededed;">
+                                        <img class="w-100 rounded-top-4" height="250px" src="images/youngCourseImg.jpg" alt="">
+                                        <div class="itemInfo p-3">
+                                            <div class="title d-flex justify-content-between align-items-center mb-3">
+                                                <h3>COMPUTERS FROM HI TO AI</h3>
+                                                <div class="counter d-flex align-items-center gap-2">
+                                                    <img src="images/manCourse.svg" alt="">
+                                                    <span >250</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-2">12 محاضرات - من 8 الي 12 سنوات</h4>
+                                            <p>عن طريق الانترنت - يوديمي - في مكان الدورة</p>
+                                            <div class="price mb-3">
+                                                <span id="priceNow">1,500 ج.م</span>
+                                                <span id="priceBefore">2,000 ج.م</span>
+                                            </div>
+                                            <button>انضم الأن</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="item rounded-4" style="background: #ededed;">
+                                        <img class="w-100 rounded-top-4" height="250px" src="images/youngCourseImg.jpg" alt="">
+                                        <div class="itemInfo p-3">
+                                            <div class="title d-flex justify-content-between align-items-center mb-3">
+                                                <h3>COMPUTERS FROM HI TO AI</h3>
+                                                <div class="counter d-flex align-items-center gap-2">
+                                                    <img src="images/manCourse.svg" alt="">
+                                                    <span >250</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-2">12 محاضرات - من 8 الي 12 سنوات</h4>
+                                            <p>عن طريق الانترنت - يوديمي - في مكان الدورة</p>
+                                            <div class="price mb-3">
+                                                <span id="priceNow">1,500 ج.م</span>
+                                                <span id="priceBefore">2,000 ج.م</span>
+                                            </div>
+                                            <button>انضم الأن</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="item rounded-4" style="background: #ededed;">
+                                        <img class="w-100 rounded-top-4" height="250px" src="images/youngCourseImg.jpg" alt="">
+                                        <div class="itemInfo p-3">
+                                            <div class="title d-flex justify-content-between align-items-center mb-3">
+                                                <h3>COMPUTERS FROM HI TO AI</h3>
+                                                <div class="counter d-flex align-items-center gap-2">
+                                                    <img src="images/manCourse.svg" alt="">
+                                                    <span >250</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-2">12 محاضرات - من 8 الي 12 سنوات</h4>
+                                            <p>عن طريق الانترنت - يوديمي - في مكان الدورة</p>
+                                            <div class="price mb-3">
+                                                <span id="priceNow">1,500 ج.م</span>
+                                                <span id="priceBefore">2,000 ج.م</span>
+                                            </div>
+                                            <button>انضم الأن</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="courseGenre my-5">
+                    <div class="genreHeader mb-5">
+                        <h3>الجرافيكس و الانيميشن</h3>
+                        <span></span>
+                    </div>
+                    <div class="items">
+                        <div class="container">
+                            <div class="row justify-content-center" id="coursesContainer3">
+                                <div class="col-md-4">
+                                    <div class="item rounded-4" style="background: #ededed;">
+                                        <img class="w-100 rounded-top-4" height="250px" src="images/youngCourseImg.jpg" alt="">
+                                        <div class="itemInfo p-3">
+                                            <div class="title d-flex justify-content-between align-items-center mb-3">
+                                                <h3>COMPUTERS FROM HI TO AI</h3>
+                                                <div class="counter d-flex align-items-center gap-2">
+                                                    <img src="images/manCourse.svg" alt="">
+                                                    <span >250</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-2">12 محاضرات - من 8 الي 12 سنوات</h4>
+                                            <p>عن طريق الانترنت - يوديمي - في مكان الدورة</p>
+                                            <div class="price mb-3">
+                                                <span id="priceNow">1,500 ج.م</span>
+                                                <span id="priceBefore">2,000 ج.م</span>
+                                            </div>
+                                            <button>انضم الأن</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="item rounded-4" style="background: #ededed;">
+                                        <img class="w-100 rounded-top-4" height="250px" src="images/youngCourseImg.jpg" alt="">
+                                        <div class="itemInfo p-3">
+                                            <div class="title d-flex justify-content-between align-items-center mb-3">
+                                                <h3>COMPUTERS FROM HI TO AI</h3>
+                                                <div class="counter d-flex align-items-center gap-2">
+                                                    <img src="images/manCourse.svg" alt="">
+                                                    <span >250</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-2">12 محاضرات - من 8 الي 12 سنوات</h4>
+                                            <p>عن طريق الانترنت - يوديمي - في مكان الدورة</p>
+                                            <div class="price mb-3">
+                                                <span id="priceNow">1,500 ج.م</span>
+                                                <span id="priceBefore">2,000 ج.م</span>
+                                            </div>
+                                            <button>انضم الأن</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="item rounded-4" style="background: #ededed;">
+                                        <img class="w-100 rounded-top-4" height="250px" src="images/youngCourseImg.jpg" alt="">
+                                        <div class="itemInfo p-3">
+                                            <div class="title d-flex justify-content-between align-items-center mb-3">
+                                                <h3>COMPUTERS FROM HI TO AI</h3>
+                                                <div class="counter d-flex align-items-center gap-2">
+                                                    <img src="images/manCourse.svg" alt="">
+                                                    <span >250</span>
+                                                </div>
+                                            </div>
+                                            <h4 class="mb-2">12 محاضرات - من 8 الي 12 سنوات</h4>
+                                            <p>عن طريق الانترنت - يوديمي - في مكان الدورة</p>
+                                            <div class="price mb-3">
+                                                <span id="priceNow">1,500 ج.م</span>
+                                                <span id="priceBefore">2,000 ج.م</span>
+                                            </div>
+                                            <button>انضم الأن</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+       </div>
+
+
+
+
+
+
+      <footer class="bg-gradient pt-5 pb-4 text-white">
+        <div class="container">
+          <div class="footerContent d-flex justify-content-between">
+            <div class="footerSection acaDesc">
+              <h1 class="mb-3">Digineers Academy</h1>
+              <p>دي أكاديمى أفضل منصة برمجة للأطفال والمراهقين في منطقة الشرق الأوسط وشمال إفريقيا متخصصون في التدريب (الروبوتات - البرمجة - التصميم الجرافيكي) للأطفال والمراهقين من 6 إلى 18 عامًا. يمر المتدرب من خلال رحلة مثيرة للاهتمام في عالم المقتطفات في علوم البرمجة والروبوتات والرسومات ، والتي تستمر على مستويات متعددة من البداية إلى المهنية لأكثر من 3 سنوات من المحتوى</p>
+            </div>
+            <div class="footerSection">
+              <h2 class="mb-3">روابط اساسية</h2>
+              <ul class="list-unstyled d-flex flex-column justify-content-evenly p-0">
+                <li><a href="">الصفحة الرئيسية</a></li>
+                <li><a href="">عن الاكاديمية</a></li>
+                <li><a href="">الدورات التدريبية</a></li>
+                <li><a href="">المتابعة والحضور</a></li>
+                <li><a href="">تواصل معنا</a></li>
+                <li><a href="">انضم لنا</a></li>
+                <li><a href="">شروط وأحكام</a></li>
+              </ul>
+            </div>
+            <div class="footerSection" dir="ltr">
+              <h2 class="mb-3">أتصل بنا</h2>
+              <ul class="list-unstyled mb-5 p-0">
+                <li>+201550770880</li>
+                <li>info@digineers-academy.com</li>
+                <li>شروط وأحكام</li>
+              </ul>
+              <div class="footerSection pt-3">
+                <h2 class="mb-3">طرق الدفع</h2>
+                <ul class="list-unstyled d-flex justify-content-evenly p-0">
+                  <li><img src="images/cash___media_library_original_71_79.webp" alt=""></li>
+                  <li><img src="images/paymob___media_library_original_79_78.webp" alt=""></li>
+                  <li><img src="images/paypal___media_library_original_73_78.webp" alt=""></li>
+                  <li><img src="images/faisalBank-___media_library_original_104_91.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="text-center mt-4 fw-light">أفضل منصة برمجة للأطفال والمراهقين في منطقة الشرق الأوسط وشمال إفريقيا</p>
+          <div class="socialCredit d-flex align-items-center justify-content-between mt-4">
+            <p class="m-0 fw-light">جميع الحقوق محفوظة ل Digineers Academy</p>
+            <div class="socialButtons text-white">
+              <i class="fa-brands fa-square-facebook ms-3 fs-1 p-1"></i>
+              <i class="fa-brands fa-square-whatsapp ms-3 fs-1 p-1"></i>
+              <i class="fa-solid fa-envelope ms-3 fs-1 p-1"></i>
+            </div>
+            <div class="filler"></div>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+      <script src="scripts/bootstrap.bundle.min.js" ></script>
+      <script src="scripts/courses.js" ></script>
+</body>
+</html>

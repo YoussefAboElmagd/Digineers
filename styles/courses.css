@@ -1,0 +1,190 @@
+:root{
+--mainColor: #26c03d;
+}
+body{
+    font-family: Alexandria;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--mainColor);
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--mainColor);
+}
+.navbar ul li{
+    position: relative;
+}
+.navbar ul li::before{
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    left: 5%;
+    width: 0%;
+    height: 3px;
+    background: var(--mainColor);
+    border-radius: 12px;
+    transition: all 0.65s ease;
+}
+.navbar ul li:hover::before{
+    width: 90%;
+}
+#bookingButtonNav{
+  width: 100%;
+  padding: 0.9rem 3rem;
+  color: white;
+  background-color: var(--mainColor);
+  border: 2px solid var(--mainColor);
+  border-radius: 15px;
+  transition: 0.3s;
+}
+#bookingButtonNav:hover{
+  color: var(--mainColor);
+  background-color: transparent;
+}
+.mainText h2{
+    color: var(--mainColor)
+}
+.tab{
+    width: 90%;
+    height: 2.75rem;
+    color: #515151;
+    background: #ededed;
+    border-radius: 10px;
+    border:0;
+}
+.selectedTab{
+    background: var(--mainColor);
+    color: white;
+    font-weight: 700;
+}
+.genreHeader{
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+    padding: 0 5rem;
+}
+.genreHeader h3{
+    font-size:2.75rem;
+    color: #626262;
+    margin:0;
+}
+.genreHeader span{
+    display: block;
+    width: 100%;
+    height: 6px;
+    background-color: rgba(38, 192, 61, 0.2);
+    flex: 1;
+    margin-top: 0.75rem;
+}
+.item .title h3{
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+}
+.item .title .counter span{
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    color: var(--mainColor);
+}
+.item h4{
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #706c6c;
+}
+.item p{
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: var(--mainColor);
+}
+.price #priceNow{
+    font-size: 1.5rem;
+}
+.price #priceBefore{
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #989898;
+}
+.item button{
+    width: 45%;
+    height: 3rem;
+    color: var(--mainColor);
+    background: transparent;
+    border-radius: 10px;
+    border:2px solid var(--mainColor);
+    transition: 0.3s;
+}
+.item button:hover{
+    color: white;
+    background: var(--mainColor);
+}
+.courses{
+  background-image: url(../images/backPage.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #012931;
+  }
+  .footerSection.acaDesc{
+    width: 32%;
+  }
+  .footerSection h1{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--mainColor);
+  }
+  .footerSection h2{
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .footerSection p{
+    font-weight: 300;
+  }
+  .footerSection ul li{
+    font-weight: 300;
+    margin-bottom: 0.65rem;
+  }
+  .footerSection ul li img{
+    width: 50px;
+    height: 50px;
+    margin-right: 0.7rem;
+  }
+  .footerSection ul li a{
+    color:white;
+  }
+  .socialCredit p{
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.678);
+  }
+  .socialCredit .filler{
+    width: 25%;
+  }
+  .socialCredit .socialButtons i{
+    font-size: 1.5rem !important;
+  }
+  .socialButtons i{
+          
+    transition: all 0.4s;
+  }
+  .socialButtons i:hover{
+
+      transform: scale(1.15);
+
+  }

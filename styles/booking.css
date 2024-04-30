@@ -1,0 +1,273 @@
+:root{
+    --mainColor: rgb(38, 192, 61);
+  }
+    body{
+        font-family: Alexandria;
+        font-weight: 600;
+        box-sizing: border-box;
+    }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+      color: var(--mainColor);
+    }
+    .nav-link:focus, .nav-link:hover {
+        color: var(--mainColor);
+    }
+    .navbar ul li{
+      position: relative;
+    }
+    .navbar ul li::before{
+        content: '';
+        position: absolute;
+        bottom: -10%;
+        left: 5%;
+        width: 0%;
+        height: 3px;
+        background: var(--mainColor);
+        border-radius: 12px;
+        transition: all 0.65s ease;
+    }
+    .navbar ul li:hover::before{
+        width: 90%;
+    }
+    #bookingButtonNav{
+      width: 100%;
+      padding: 0.9rem 3rem;
+      color: white;
+      background-color: var(--mainColor);
+      border: 2px solid var(--mainColor);
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+    #bookingButtonNav:hover{
+        color: var(--mainColor);
+        background-color: transparent;
+    }
+    .form-control:focus{border-color: #5cb85c;box-shadow: 0 0 0 0.25rem rgba(38, 192, 61,.25); -webkit-box-shadow: 0 0 0 0.25rem rgba(38, 192, 61,.25);} 
+    .has-error .form-control:focus{box-shadow: none; -webkit-box-shadow: none;}
+    .form-select:focus{border-color: #5cb85c;box-shadow: 0 0 0 0.25rem rgba(38, 192, 61,.25); -webkit-box-shadow: 0 0 0 0.25rem rgba(38, 192, 61,.25);} 
+    .form-check-input:focus{border-color: #5cb85c;box-shadow: 0 0 0 0.25rem rgba(38, 192, 61,.25); -webkit-box-shadow: 0 0 0 0.25rem rgba(38, 192, 61,.25);} 
+    .form-check-input:checked {
+      background-color: var(--mainColor);
+      border-color: var(--mainColor);
+    }
+
+  .header h2{
+    font-size: 2.25rem;
+    font-weight: 500;
+  }
+  .header h2 span{
+    font-size: 3.5rem;
+    color: var(--mainColor);
+  }
+  
+  .bookingBox h3{
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #515151;
+  }
+  .bookingBox h3 span{
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--mainColor);
+  }
+
+  .bookingFields label{
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .bookingFields label p{
+    color: #404040;
+    font-size: 0.85rem;
+    display: inline;
+    font-weight: 300;
+  }
+  .bookingFields label span{
+    color: red;
+  }
+  .bookingFields input{
+    font-size: 0.95rem;
+    font-weight: 300;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .bookingFields select{
+    font-size: 0.95rem;
+    font-weight: 300;
+    margin-bottom: 1.25rem;
+
+  }
+  .bookingFields select option{
+    font-size: 0.9rem;
+    font-weight: 300;
+    
+  }
+  .bookingFields .checkgroub{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+  .bookingFields .checkgroub .method {
+    padding: 16px 12px;
+    border: 1px solid #E2E2E2;
+    min-width: 225px;
+    flex-grow: 1;
+  }
+  .bookingFields .checkgroub .method p {
+    font-size: 0.9rem;
+    line-height: 18px;
+    text-align: center;
+    color: #EA4C1A;
+    display: block;
+    margin: 0px auto 10px;
+  }
+  .bookingFields .checkgroub .method h4 {
+    font-size: 0.85rem;
+    font-weight: bold;
+    line-height: 15px;
+    text-align: center;
+    color: var(--mainColor);
+    margin-bottom: 8px;
+  } 
+  .bookingFields .checkgroub .method h5 {
+    font-size: 2rem;
+    line-height: 44px;
+    text-align: center;
+    margin: 0;
+  }
+  .bookingFields .checkgroub .method h5 span {
+    font-size: 1rem;
+    color: #555555;
+  }
+  .bookingFields .checkgroub .method p span {
+    font-size: 1rem;
+    line-height: 21px;
+    text-align: center;
+    text-decoration-line: line-through;
+    padding: 0px 4px;
+    color: #969696;
+  }
+
+  .bookingFields .checkgroub .method ul {
+    padding: 12px 0px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 1px solid #F3F3F3;
+    list-style: none;
+    margin: 0;
+  }
+  
+  .bookingFields .checkgroub .method ul li {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  } 
+  .bookingFields .checkgroub .method ul li h6{
+    font-size: 0.75rem;
+    font-weight: 300;
+    margin-bottom: 0;
+  } 
+  .bookingFields button{
+    width: 40%;
+    padding: 0.9rem 0;
+    color: white;
+    background-color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+    border-radius: 15px;
+    transition: 0.3s;
+  }
+  .bookingFields button:hover{
+    color: var(--mainColor);
+    background-color: transparent;
+  }
+  .endDiv {
+    align-self: flex-end;
+  }
+
+  .cornersParent{
+    position: relative;
+    background-color: white;
+    padding: 2.5rem;
+  }
+  .cornersParent::before{
+    content: '';
+    width: 250px;
+    height: 250px;
+    background-color: var(--mainColor);
+    position: absolute;
+    top: -1%;
+    right: -1.25%;
+    z-index: -1;
+    border-radius: 0 15px 0 0;
+  }
+  .cornersParent::after{
+    content: '';
+    width: 250px;
+    height: 250px;
+    background-color: var(--mainColor);
+    position: absolute;
+    bottom: -1%;
+    left: -1.25%;
+    z-index: -1;
+    border-radius: 0 0 0 15px;
+  }
+
+
+  #robotHandDecoration{
+    transform: rotateY(180deg);
+    left: -8%;
+  }
+
+
+    footer{
+        background-color: #012931;
+      }
+      .footerSection.acaDesc{
+        width: 32%;
+      }
+      .footerSection h1{
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--mainColor);
+      }
+      .footerSection h2{
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+      .footerSection p{
+        font-weight: 300;
+      }
+      .footerSection ul li{
+        font-weight: 300;
+        margin-bottom: 0.65rem;
+      }
+      .footerSection ul li img{
+        width: 50px;
+        height: 50px;
+        margin-right: 0.7rem;
+      }
+      .footerSection ul li a{
+        color:white;
+      }
+      .socialCredit p{
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.678);
+      }
+      .socialCredit .filler{
+        width: 25%;
+      }
+      .socialCredit .socialButtons i{
+        font-size: 1.5rem !important;
+      }
+      .socialButtons i{
+          
+        transition: all 0.4s;
+      }
+      .socialButtons i:hover{
+
+          transform: scale(1.15);
+
+      }

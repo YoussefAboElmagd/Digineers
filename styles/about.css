@@ -1,0 +1,317 @@
+:root{
+    --mainColor: rgb(38, 192, 61);
+}
+body{
+    font-family: Alexandria;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--mainColor);
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--mainColor);
+}
+.navbar ul li{
+    position: relative;
+}
+.navbar ul li::before{
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    left: 5%;
+    width: 0%;
+    height: 3px;
+    background: var(--mainColor);
+    border-radius: 12px;
+    transition: all 0.65s ease;
+}
+.navbar ul li:hover::before{
+    width: 90%;
+}
+#bookingButtonNav{
+    width: 100%;
+    padding: 0.9rem 3rem;
+    color: white;
+    background-color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+    border-radius: 15px;
+    transition: 0.3s;
+}
+#bookingButtonNav:hover{
+    color: var(--mainColor);
+    background-color: transparent;
+}
+.firstSection{
+    margin-bottom: 100px;
+    position: relative;
+}
+.firstSection #rocketImg{
+    position: absolute;
+    top:-5%;
+    right: 0;
+    transform: rotateY(-180deg);
+}
+.mainText h2{
+    color: var(--mainColor)
+}
+.sectionHeader h2{
+    font-size: 2.5rem;
+    transition: 0.3s;
+}
+.sectionHeader:hover h2{
+    transform: translate(-7%);
+}
+.sectionHeader span{
+    font-size: 5rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--mainColor);
+    transition: 0.3s;
+}
+    .sectionHeader:hover span:last-child{
+    transform: translate(-100%);
+}
+    .sectionHeader:hover span:first-child{
+    transform: translate(-40%);
+}
+.academyInfo p{
+font-size: 1.25rem;
+font-weight: 300;
+color: #212529;
+}
+.aboutPic img{
+height: 492px;
+width: auto;
+}
+.misionVision{
+    background: rgba(38, 192, 61, 0.1);
+}
+.misionVision .item img{
+    margin-bottom: 1rem;
+}
+.misionVision .item h2{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #212529;
+    margin-bottom: 1rem;
+}
+.misionVision .item p{
+    font-size: 1rem;
+    font-weight: 300;
+    color: #212529;
+}
+.ourAch{
+    position: relative;
+}
+
+.achHeader:hover span:last-child{
+    transform: translate(-40%);
+  }
+  .achHeader:hover span:first-child{
+    transform: translate(40%);
+  }
+  .achHeader h2{
+    margin-bottom: 0;
+  }
+  .achHeader:hover h2{
+    transform: translate(0);
+  }
+.ourAch #maskGroup{
+    position: absolute;
+    top:-5%;
+    left: 0;
+    transform: rotateY(180deg);
+}
+.circleCont{
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+}
+.circle {
+    position: absolute;
+    right: -230px;
+    content: "";
+    width: 300px;
+    top: 16%;
+    left: -230px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px dashed #9B9B9B;
+}
+.circle .item{
+    display: flex;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+}
+.circle .item span {
+    display: block;
+    height: 1px;
+    min-width: 140px;
+    border: 1px #0B80D4 dotted;
+    position: relative;
+}
+.circle .item span::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #0B80D4;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -10px;
+}
+.circle .item .content {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.circle .item .content img {
+    transform: translateY(-46%) rotate(-16deg) rotateY(180deg);
+    position: absolute;
+    right: -49px;
+    left: auto;
+    top: 50%;
+    vertical-align: middle;
+}
+.circle .item .content h3 {
+    min-width: 400px;
+    width: max-content;
+    height: 76px;
+    padding: 22px 80px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 16px;
+    z-index: -1;
+    transform: rotate(-16deg);
+    font-size: 20px;
+    color: #5C5959;
+}
+.circle .item1{
+    left: 11px;
+    right: auto;
+    transform: rotate(16deg);
+    top: -7px;
+}
+.circle .item1 span {
+    min-width: 150px;
+}
+.circle .item2 {
+    left: auto;
+    top: 75px;
+    right: calc(100% - 4px);
+    transform: rotate(4deg);
+}
+.circle .item2 span {
+    min-width: 150px;
+    border-color: #02A730;
+}
+.circle .item2 span::before {
+    background-color: #02A730;
+}
+.circle .item2 .content img {
+    transform: translateY(-50%) rotate(-6deg) rotateY(180deg);
+}
+.circle .item2 .content h3 {
+    transform: rotate(-4deg);
+    top: -27px;
+}
+.circle .item3 {
+    top: 167px;
+    left: auto;
+    right: calc(100% - 4px);
+    transform: rotate(-12deg);
+}
+.circle .item3 span {
+    min-width: 130px;
+    border-color: #F17044;
+}
+.circle .item3 span::before {
+    background-color: #F17044;
+}
+.circle .item3 .content img {
+    transform: translateY(-50%) rotate(-2deg) rotateY(180deg);
+}
+.circle .item3 .content h3 {
+    transform: rotate(12deg);
+    top: -80px;
+    z-index: -1;
+}
+.circle .item4 {
+    top: auto;
+    bottom: -11px;
+    left: auto;
+    right: calc(100% - 62px);
+    transform: rotate(-25deg);
+}
+.circle .item4 span {
+    min-width: 120px;
+    border-color: #C9284F;
+}
+.circle .item4 span::before {
+    background-color: #C9284F;
+}
+.circle .item4 .content img {
+    transform: translateY(-57%) rotate(23deg) rotateY(180deg);
+}
+.circle .item4 .content h3 {
+    transform: rotate(24.8deg);
+    right: -10px;
+    top: -140px;
+    left: -10px;
+    z-index: -1;
+}
+
+
+
+footer{
+    background-color: #012931;
+  }
+  .footerSection.acaDesc{
+    width: 32%;
+  }
+  .footerSection h1{
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--mainColor);
+  }
+  .footerSection h2{
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+  .footerSection p{
+    font-weight: 300;
+  }
+  .footerSection ul li{
+    font-weight: 300;
+    margin-bottom: 0.65rem;
+  }
+  .footerSection ul li img{
+    width: 50px;
+    height: 50px;
+    margin-right: 0.7rem;
+  }
+  .footerSection ul li a{
+    color:white;
+  }
+  .socialCredit p{
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.678);
+  }
+  .socialCredit .filler{
+    width: 25%;
+  }
+  .socialCredit .socialButtons i{
+    font-size: 1.5rem !important;
+  }
